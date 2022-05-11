@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
 }
-/* pagina principal*/
+
 .header{
      padding: 2%;
      display: flex;
@@ -58,9 +58,8 @@ nav ul li a:hover::before{
 
     
 }
+/*pagina principal*/
 
-
-/*main*/
 .contenido{
     display: contents;
 }
@@ -105,6 +104,7 @@ h2 {
     
 .fotos{
     width: 100%;
+    cursor: pointer;
 }
 
 .grid{
@@ -168,63 +168,18 @@ h2 {
     background-color: grey;
     grid-area: ele5;
 }
+/*hi there page*/
 
-/*.mobile {
-    display: none;
-  
-   }*/
-
-
-/* Footer */
-
-   footer{
-        display: flex; 
-        flex-direction: row;
-        justify-content: space-between; }
-
-   .despedida{
-        display: flex;
-        margin-top: 100px;
-        margin-left: 20px; 
-        margin-bottom: 100px;  
-        text-decoration: gray;
-        font-family: 'Open Sans', sans-serif;
-        align-items: center;
-  }
-
-    /*hi there page*/
-
-    h4 {
-        text-align: center;
-        margin: 25px;
-        letter-spacing: 15px;
-        font-size: 300%;
-        font-family: 'Open Sans', sans-serif;
-        margin-top: 150px;
-        font-weight: 500;
-    }
-    .textoprincipalhithere {
-            display: flex;
-            margin-top: 20px;
-            margin-left: 20px;   
-            text-decoration: gray;
-            font-family: 'Open Sans', sans-serif;
-            align-items: center;
-            margin-top: 150px;
-         }
-    
-    /*about us page */
-
-    h4 {
-        text-align: center;
-        margin: 25px;
-        letter-spacing: 15px;
-        font-size: 300%;
-        font-family: 'Open Sans', sans-serif;
-        margin-top: 150px;
-        font-weight: 500;
+h4 {
+    text-align: center;
+    margin: 25px;
+    letter-spacing: 15px;
+    font-size: 300%;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 150px;
+    font-weight: 500;
 }
-    .textoprincipalaboutus {
+.textoprincipalhithere {
         display: flex;
         margin-top: 20px;
         margin-left: 20px;   
@@ -233,220 +188,104 @@ h2 {
         align-items: center;
         margin-top: 150px;
      }
-       
-    /*contact us page */
+.gradientbodyhi {
+    background-image: linear-gradient(to left, grey, white);
+}
 
-    h4 {
-        text-align: center;
-        margin: 25px;
-        letter-spacing: 15px;
-        font-size: 300%;
-        font-family: 'Open Sans', sans-serif;
-        margin-top: 150px;
-        font-weight: 500;
-    }
-    .textoprincipalcontactus {
-            display: flex;
-            margin-top: 20px;
-            margin-left: 20px;   
-            text-decoration: gray;
-            font-family: 'Open Sans', sans-serif;
-            align-items: center;
-            margin-top: 150px;
-         }
-    
-    /* works page */
-  
-    .grid-item{
+/*about us page */
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
+h4 {
+    text-align: center;
+    margin: 25px;
+    letter-spacing: 15px;
+    font-size: 300%;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 150px;
+    font-weight: 500;
+}
+.textoprincipalaboutus {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;   
+    text-decoration: gray;
+    font-family: 'Open Sans', sans-serif;
+    align-items: center;
+    margin-top: 150px;
+ }
+.gradientbodyaboutus{
+    background-image: linear-gradient(to right, grey, white);
 
-        background-color: grey;
-        border-radius: 4px;
-        transition: transform 0.3s ease-in-out;
-
-        border: solid 1px white;
-
-    }
-    .grid-item:hover{
-        filter: opacity(0.9);
-        transform: scale(1.04);
-    }
-    .gridcontainer{
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        grid-auto-rows: minmax(200px, auto);
-        gap: 20px;
-        padding: 20px;
-
-    }
-
-
-
-   /* Media Querys */
-
-  
- @media screen and (max-width: 600px){
-    
-    body { background-color: yellow;
-    
-     }
-     
-    .header {
-        flex-direction: row;
-     }
-
-    
-    .imagenlogo{
-        width: 30%;
-        margin-left: 7px; 
-        margin-top: 7px;
-
-     }
-    
-    nav {
-         display: none;
-        
-    }
-
-    main {
-        flex-direction: column;
-     }
-    .contenido{
-        flex-direction: column;
-    }
-
-    h1{
-        text-align:center;
-        margin: 70px;
-        letter-spacing: 7px;
-        font-size: 300%;
-        font-family: 'Rubik Glitch', cursive;
-     }
-    
-    h2 {
-        text-align: center;
-        margin: 25px;
-        letter-spacing: 15px;
-        font-size: 40;
-        font-family: 'Open Sans', sans-serif;
-     }
-
-    .ojo{
-        width: 75%;
-        height: 75%;
-        margin-left: 60px;
-        margin-top: 130px;
-        shape-image-threshold: 3px;
-        
-     }
-    
-    
-    .textoprincipal{
-         flex-direction: column;
-         align-items: center;
-     }
-    
-    }
-     
-
-    /*hi there page*/
-
-    h4 {
-        text-align: center;
-        margin: 25px;
-        letter-spacing: 15px;
-        font-size: 300%;
-        font-family: 'Open Sans', sans-serif;
-        margin-top: 150px;
-        font-weight: 500;
-    }
-    .textoprincipalhithere {
-            display: flex;
-            margin-top: 20px;
-            margin-left: 20px;   
-            text-decoration: gray;
-            font-family: 'Open Sans', sans-serif;
-            align-items: center;
-            margin-top: 150px;
-         }
-    
-   /*about us page */
-  
-    h4 {
-        text-align: center;
-        margin: 25px;
-        letter-spacing: 15px;
-        font-size: 300%;
-        font-family: 'Open Sans', sans-serif;
-        margin-top: 150px;
-        font-weight: 500;
-        }
-
-    .textoprincipalaboutus {
-            display: flex;
-            margin-top: 20px;
-            margin-left: 20px;   
-            text-decoration: gray;
-            font-family: 'Open Sans', sans-serif;
-            align-items: center;
-            margin-top: 150px;
-         }
-    
+}
 /*contact us page */
 
-    h4 {
-            text-align: center;
-            margin: 25px;
-            letter-spacing: 15px;
-            font-size: 300%;
-            font-family: 'Open Sans', sans-serif;
-            margin-top: 150px;
-            font-weight: 500;
-         }
-    
-    .textoprincipalcontactus {
-            display: flex;
-            margin-top: 20px;
-            margin-left: 20px;   
-            text-decoration: gray;
-            font-family: 'Open Sans', sans-serif;
-            align-items: center;
-            margin-top: 150px;
-            padding-left: 20%;
-         }
-    .formregister{
-
-        width: 400px;
-        background-color: rgba(0, 0, 0, 0.4);
-        padding: 55px;
-        margin: auto;
-        margin-top: 100px;
-        border-radius: 4px;
+h4 {
+    text-align: center;
+    margin: 25px;
+    letter-spacing: 15px;
+    font-size: 300%;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 150px;
+    font-weight: 500;
+}
+.textoprincipalcontactus {
+        display: flex;
+        margin-top: 20px;
+        margin-left: 20px;   
+        text-decoration: gray;
         font-family: 'Open Sans', sans-serif;
-        color: white;
-        justify-content: center;
-    }
-    .controls{
-        width: 100%;
-        background: rgb(196, 193, 193);
-        padding: 10px;
-        border-radius: 4px;
-        margin-bottom: 16px;
-        border: 1px;
-        font-family:'Open Sans', sans-serif;
-        font-size: 18px;
-    }
-    .formregister .button {
+        align-items: center;
+        margin-top: 150px;
+     }
 
-        color: grey;
-        border: none;
-        font-size: 16px;
-    }
-    .formregister .button2 {
+/* works page */
 
-        color: grey;
-        border: none;
-        font-size: 16px;
+.contenido2{
+    width: 100%;
+    
+}
+.contenido3{
+   
+    margin-top: 150px;
+    
+
+}
+.imagenesworks{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: 5rem;
+    
+ }
+
+.imagenesworks img:hover{
+    transform: scale(1.5);
+}
+.imgworks{
+    padding: 10px;
+    line-height: 80px;
+    width: 600px;
+    height: 600px;
+    cursor: pointer;
+    
+}
+.gradientbodyworks{
+    background-image: linear-gradient(to top, grey, white);
+
+}
+footer{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between; }
+
+.despedida{
+    display: flex;
+    margin-top: 100px;
+    margin-left: 20px; 
+    margin-bottom: 100px;  
+    text-decoration: gray;
+    font-family: 'Open Sans', sans-serif;
+    align-items: center;
+}
+
