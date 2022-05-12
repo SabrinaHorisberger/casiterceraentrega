@@ -1,0 +1,19 @@
+{
+  "name": "artproducers-2-2",
+  "version": "1.0.0",
+  "description": "Agregando Sass al Proyecto",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass style.scss ./css/style.css -w --no-source-map -s compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SabrinaHorisberger/spacebetween.git"
+  },
+  "author": "Sabrina Horisberger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SabrinaHorisberger/spacebetween/issues"
+  },
+  "homepage": "https://github.com/SabrinaHorisberger/spacebetween#readme"
+}
