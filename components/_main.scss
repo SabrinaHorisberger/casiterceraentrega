@@ -2,6 +2,10 @@
 .contenido {
     display: contents;
   }
+ .indexbody{
+   background-color: grey;
+   
+ }
   
   h1 {
     text-align: center;
@@ -9,15 +13,68 @@
     letter-spacing: 7px;
     font-size: 600%;
     font-family: "Rubik Glitch", cursive;
+    
+  
+    }
+
+  h1:hover{
+    transition: all;
+    color: #ADFF2F;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.30, 3, 0.44, 2);
+    -webkit-transition-duration: 2s;
   }
   
-  h2 {
-    text-align: end;
-    margin: 25px;
-    letter-spacing: 15px;
-    font-size: 200;
-    font-family: "Open Sans", sans-serif;
-  }
+   .wrapper {
+     display: inline-flex;
+     margin-left: 100px;
+   }
+
+   .wrapper .static-txt{
+       color: black;
+       font-size: 20px;
+       font-weight: 400;
+       font-family: "Open Sans", sans-serif;
+       letter-spacing: 5px;
+ 
+
+    }
+    .wrapper .dynamic-txts{
+      margin-left: 50px;
+
+    }
+
+    .dynamic-txts li{
+       list-style: none;
+       font-size: 35px;
+       font-weight: 300;
+       font-family: "Open Sans", sans-serif, bold;
+       letter-spacing: 15px;
+       color: #ADFF2F;
+    
+    }
+    .dynamic-txts li span{
+      position: relative;
+    }
+
+    .dynamic-txts li span::after{
+      content: "";
+      position: absolute;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      border-left: 2px solid grey;
+      background: grey;
+      animation: typing 2s steps(100) infinite;
+      
+    }
+    @keyframes typing{
+      100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+      }
+    }
+
   
   .ojo {
     width: 75%;
@@ -25,6 +82,7 @@
     margin-left: 180px;
     margin-top: 130px;
     shape-image-threshold: 3px;
+    border-radius: 5px;
   }
   
   h3 {
@@ -46,6 +104,8 @@
   .fotos {
     width: 100%;
     cursor: pointer;
+    border-radius: 5px;
+
   }
   
   .grid {
@@ -122,10 +182,21 @@
     margin-top: 150px;
     font-weight: 500;
   }
+
+  .imagenhithere{
+    width: 70%;
+    height: 70%;
+    margin-left: 180px;
+    margin-top: 130px;
+    shape-image-threshold: 3px;
+    border-radius: 50px;
+
+  }
   
   .textoprincipalhithere {
    @extend .textoprincipal ;
     margin-top: 150px;
+    margin-bottom: 150px;
   }
   
   .gradientbodyhi {
@@ -141,11 +212,13 @@
     font-family: "Open Sans", sans-serif;
     margin-top: 150px;
     font-weight: 500;
+    color: #ADFF2F;
   }
   
   .textoprincipalaboutus {
    @extend .textoprincipal;
     margin-top: 150px;
+      margin-bottom: 150px;
   }
   
   .gradientbodyaboutus {
@@ -165,6 +238,7 @@ h4 {
   .textoprincipalcontactus {
     @extend .textoprincipal;
     margin-top: 150px;
+    margin-left: 60px;
   }
   .formregister{
 
@@ -204,6 +278,7 @@ h4 {
   /* works page */
 .contenido2 {
     width: 100%;
+    
   }
   
   .contenido3 {
@@ -217,13 +292,16 @@ h4 {
     justify-content: flex-start;
     flex-wrap: wrap;
     margin-left: 5rem;
+
+    
   }
   
   .imagenesworks img:hover {
-    transform: scale(1.5);
+    transform: scale(1.7);
   }
   
   .imgworks {
+    border-radius: 3%;
     padding: 10px;
     line-height: 80px;
     width: 600px;
